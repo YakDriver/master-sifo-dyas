@@ -4,7 +4,7 @@ import (
 	"strings"
 )
 
-func encode(input string, cipher Cipher) string {
+func Encode(input string, cipher Cipher) string {
 	var encoded strings.Builder
 	for _, word := range strings.Fields(input) {
 		encoded.WriteString(encodeWord(word, cipher))

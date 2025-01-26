@@ -111,13 +111,13 @@ func TestDecodeWord(t *testing.T) {
 }
 
 func TestEncodeDecodeWordSimple(t *testing.T) {
-	words := LoadWords("../words_with_rank.csv")
+	words := LoadWords("../words.csv")
 
-	cipher := kindCatsCipher()
+	cipher := WormHeldCipher()
 
 	for word := range words {
 		encodedWord := encodeWord(word, cipher)
-		decodedWord := decodeWord(encodedWord, cipher)
+		decodedWord := decodeWord2(encodedWord, cipher)
 		if decodedWord != word {
 			t.Errorf("encodeWord and decodeWord mismatch: original %q, encoded %q, decoded %q", word, encodedWord, decodedWord)
 		}
