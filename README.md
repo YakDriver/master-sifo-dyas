@@ -4,179 +4,161 @@ Random experiment with a dumb cipher (letter-for-letter swap). It seemed like it
 
 ## Results
 
-a -> i
-ad -> is
-ah -> if
-an -> it
-and -> its
-as -> in
-ass -> inn
-bang -> pity
-barrel -> pillow
-bay -> pig
-be -> po
-beer -> pool
-ben -> pot
-best -> pond
-big -> pay
-bin -> pat
-boy -> peg
-brig -> play
-by -> pg
-cap -> jim
-cold -> jews
-color -> jewel
-dam -> sir
-dan -> sit
-days -> sign
-de -> so
-dear -> soil
-del -> sow
-dew -> sob
-dig -> say
-dip -> sam
-don -> set
-dost -> send
-dug -> sky
-ear -> oil
-eh -> of
-fan -> hit
-fat -> hid
-feet -> hood
-find -> hats
-fist -> hand
-fit -> had
-foam -> heir
-foot -> heed
-fort -> held
-go -> ye
-god -> yes
-hand -> fits
-harp -> film
-hast -> find
-hem -> for
-him -> far
-his -> fan
-hood -> fees
-horn -> felt
-hot -> fed
-how -> feb
-i -> a
-if -> ah
-in -> at
-iris -> alan
-is -> an
-it -> ad
-items -> adorn
-ken -> cot
-kin -> cat
-kind -> cats
-kisses -> cannon
-land -> wits
-las -> win
-last -> wind
-lay -> wig
-leo -> woe
-les -> won
-liar -> wail
-lid -> was
-limp -> warm
-list -> wand
-lit -> wad
-lo -> we
-lot -> wed
-low -> web
-map -> rim
-mat -> rid
-meg -> roy
-men -> rot
-met -> rod
-mind -> rats
-na -> ti
-ni -> ta
-no -> te
-not -> ted
-of -> eh
-on -> et
-or -> el
-pa -> mi
-paris -> milan
-part -> mild
-past -> mind
-pg -> my
-pig -> may
-pin -> mat
-pit -> mad
-pm -> mr
-po -> me
-post -> mend
-pot -> med
-ran -> lit
-rat -> lid
-re -> lo
-rid -> las
-rod -> les
-ropes -> lemon
-rot -> led
-roy -> leg
-sees -> noon
-set -> nod
-sex -> nov
-si -> na
-sol -> new
-sold -> news
-son -> net
-tap -> dim
-te -> do
-ten -> dot
-tip -> dam
-tips -> damn
-to -> de
-town -> debt
-up -> km
-wan -> bit
-wand -> bits
-was -> bin
-wast -> bind
-way -> big
-wear -> boil
-wert -> bold
-west -> bond
-wig -> bay
-win -> bat
-wit -> bad
-won -> bet
-wood -> bees
-yarn -> gilt
-ye -> go
-yet -> god
-yon -> get
+The winning cipher, after extensive iterations, is the "Warm Hold" cipher (named because "warm" maps to "hold"). 
+Of the top 10,000 words, these are the ones that encode to actual words. The cipher wins because many other words appear to be English in patterns of vowel groups, consonant groups, boundaries, prefixes, and suffixes.
+
+| Word | Encoded |
+| --- | --- |
+| lots | rest |
+| does | neat |
+| wad | hon |
+| mend | damn |
+| lonely | remark |
+| warm | hold |
+| us | it |
+| lid | run |
+| male | dora |
+| two | she |
+| no | me |
+| songs | tempt |
+| god | pen |
+| gang | pomp |
+| won | hem |
+| re | la |
+| so | te |
+| left | rags |
+| ole | era |
+| gas | pot |
+| beds | want |
+| dam | nod |
+| men | dam |
+| cab | bow |
+| road | leon |
+| al | or |
+| plan | from |
+| bust | wits |
+| ad | on |
+| dad | non |
+| ety | ask |
+| sad | ton |
+| lest | rats |
+| pail | four |
+| hero | yale |
+| palm | ford |
+| tint | sums |
+| ho | ye |
+| had | yon |
+| ness | matt |
+| toe | sea |
+| poets | feast |
+| bet | was |
+| en | am |
+| de | na |
+| poor | feel |
+| late | rosa |
+| hot | yes |
+| worm | held |
+| ten | sam |
+| or | el |
+| loud | rein |
+| did | nun |
+| ed | an |
+| tail | sour |
+| lo | re |
+| tame | soda |
+| mob | dew |
+| med | dan |
+| dis | nut |
+| ned | man |
+| wars | holt |
+| doom | need |
+| sail | tour |
+| too | see |
+| er | al |
+| nod | men |
+| mud | din |
+| was | hot |
+| flood | green |
+| rely | lark |
+| held | yarn |
+| win | hum |
+| ta | so |
+| rung | limp |
+| nets | mast |
+| we | ha |
+| wet | has |
+| sun | tim |
+| pair | foul |
+| bud | win |
+| rot | les |
+| off | egg |
+| sic | tub |
+| et | as |
+| tin | sum |
+| las | rot |
+| i | u |
+| val | cor |
+| act | obs |
+| bed | wan |
+| nuts | mist |
+| rats | lost |
+| led | ran |
+| ma | do |
+| vest | cats |
+| eh | ay |
+| furs | gilt |
+| farm | gold |
+| west | hats |
+| wail | hour |
+| ring | lump |
+| navy | mock |
+| it | us |
+| u | i |
+| arm | old |
+| raft | logs |
+| hail | your |
+| worn | helm |
+| les | rat |
+| rug | lip |
+| rum | lid |
+| cars | bolt |
+| gets | past |
+| up | if |
+| cool | beer |
+| bad | won |
+| mad | don |
+| moon | deem |
+| dost | nets |
+| helm | yard |
+| vice | cuba |
 
 Cipher:
 
-g -> y
-y -> g
-q -> z
-x -> v
-n -> t
-t -> d
-b -> p
-s -> n
-r -> l
-d -> s
-j -> q
-i -> a
-l -> w
-u -> k
-e -> o
-k -> c
-h -> f
-w -> b
-c -> j
-o -> e
-p -> m
-v -> x
-z -> u
-f -> h
-a -> i
-m -> r
+| Raw | Enc |
+| --- | --- |
+| a | o |
+| b | w |
+| c | b |
+| d | n |
+| e | a |
+| f | g |
+| g | p |
+| h | y |
+| i | u |
+| j | x |
+| k | v |
+| l | r |
+| m | d |
+| n | m |
+| o | e |
+| p | f |
+| q | j |
+| r | l |
+| s | t |
+| t | s |
+| u | i |
+| v | c |
+| w | h |
+| x | z |
+| y | k |
+| z | q |
