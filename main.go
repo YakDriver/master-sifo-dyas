@@ -65,11 +65,6 @@ func main() {
 		ConsonantVowelBoundaries: ConsonantVowelBoundaries,
 	}
 
-	fmt.Printf("%s\n", sifo.Encode("Empower growth by nurturing strengths, guiding with patience, and leading with love—because what we cultivate in others, we cultivate in ourselves.", sifo.WarmHoldCipher()))
-
-	sifo.Score(dict, sifo.WarmHoldCipher(), true)
-	return
-
 	bestCipher := sifo.FindBestCipher(dict, 10000)
 	sifo.Score(dict, bestCipher, true)
 
